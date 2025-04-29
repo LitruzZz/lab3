@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторна робота №3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Інформація про країни</h1>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#countries">Держава</a></li>
+    <li><a data-toggle="tab" href="#population">Населення</a></li>
+    <li><a data-toggle="tab" href="#nationality">Національність</a></li>
+  </ul>
+
+  <div class="tab-content">
+
+    <div id="countries" class="tab-pane fade in active">
+      <h3>Держава</h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Назва</th>
+            <th>Столиця</th>
+            <th>Форма правління</th>
+          </tr>
+        </thead>
+        <tbody id="countriesTableBody">
+        </tbody>
+      </table>
+    </div>
+
+    <div id="population" class="tab-pane fade">
+      <h3>Населення</h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Країна</th>
+            <th>Чоловіків</th>
+            <th>Жінок</th>
+            <th>Усього</th>
+          </tr>
+        </thead>
+        <tbody id="populationsTableBody">
+        </tbody>
+      </table>
+    </div>
+
+    <div id="nationality" class="tab-pane fade">
+      <h3>Національність</h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Назва</th>
+            <th>Мова</th>
+            <th>Кількість</th>
+          </tr>
+        </thead>
+        <tbody id="nationalitiesTableBody">
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
